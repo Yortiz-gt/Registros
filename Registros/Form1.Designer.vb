@@ -126,6 +126,7 @@ Partial Class Form1
         'TextBox1
         '
         Me.TextBox1.BackColor = System.Drawing.SystemColors.WindowFrame
+        Me.TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.TextBox1.ForeColor = System.Drawing.Color.White
         Me.TextBox1.Location = New System.Drawing.Point(69, 308)
@@ -148,6 +149,7 @@ Partial Class Form1
         'User_txt
         '
         Me.User_txt.BackColor = System.Drawing.SystemColors.WindowFrame
+        Me.User_txt.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.User_txt.Font = New System.Drawing.Font("Segoe UI", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.User_txt.ForeColor = System.Drawing.Color.White
         Me.User_txt.Location = New System.Drawing.Point(69, 196)
