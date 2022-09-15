@@ -366,6 +366,7 @@ Partial Class Form2
         '
         Me.TextBox11.Location = New System.Drawing.Point(158, 356)
         Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.PlaceholderText = "4465278900114"
         Me.TextBox11.Size = New System.Drawing.Size(130, 23)
         Me.TextBox11.TabIndex = 52
         '
@@ -382,6 +383,7 @@ Partial Class Form2
         '
         Me.TextBox10.Location = New System.Drawing.Point(27, 356)
         Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.PlaceholderText = "Guatemalteco"
         Me.TextBox10.Size = New System.Drawing.Size(111, 23)
         Me.TextBox10.TabIndex = 50
         '
@@ -398,6 +400,7 @@ Partial Class Form2
         '
         Me.TextBox9.Location = New System.Drawing.Point(270, 192)
         Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.PlaceholderText = "34568987"
         Me.TextBox9.Size = New System.Drawing.Size(100, 23)
         Me.TextBox9.TabIndex = 48
         '
@@ -414,6 +417,7 @@ Partial Class Form2
         '
         Me.TextBox8.Location = New System.Drawing.Point(26, 305)
         Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.PlaceholderText = "Lote 848, Amatitlán"
         Me.TextBox8.Size = New System.Drawing.Size(348, 23)
         Me.TextBox8.TabIndex = 46
         '
@@ -430,6 +434,7 @@ Partial Class Form2
         '
         Me.TextBox7.Location = New System.Drawing.Point(27, 245)
         Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.PlaceholderText = "María Ordoñez"
         Me.TextBox7.Size = New System.Drawing.Size(217, 23)
         Me.TextBox7.TabIndex = 44
         '
@@ -464,6 +469,7 @@ Partial Class Form2
         '
         Me.TextBox6.Location = New System.Drawing.Point(24, 192)
         Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.PlaceholderText = "Trabajador"
         Me.TextBox6.Size = New System.Drawing.Size(111, 23)
         Me.TextBox6.TabIndex = 39
         '
@@ -547,6 +553,7 @@ Partial Class Form2
         '
         Me.TextBox14.Location = New System.Drawing.Point(6, 142)
         Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.PlaceholderText = "Lote 849, Amatitlán Guatemala"
         Me.TextBox14.Size = New System.Drawing.Size(275, 23)
         Me.TextBox14.TabIndex = 58
         '
@@ -563,6 +570,7 @@ Partial Class Form2
         '
         Me.TextBox13.Location = New System.Drawing.Point(5, 89)
         Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.PlaceholderText = "Miembro"
         Me.TextBox13.Size = New System.Drawing.Size(151, 23)
         Me.TextBox13.TabIndex = 56
         '
@@ -579,6 +587,7 @@ Partial Class Form2
         '
         Me.TextBox12.Location = New System.Drawing.Point(130, 41)
         Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.PlaceholderText = "Hugo Hernandez"
         Me.TextBox12.Size = New System.Drawing.Size(151, 23)
         Me.TextBox12.TabIndex = 54
         '
@@ -637,6 +646,7 @@ Partial Class Form2
         '
         Me.TextBox4.Location = New System.Drawing.Point(139, 140)
         Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.PlaceholderText = "Pérez"
         Me.TextBox4.Size = New System.Drawing.Size(100, 23)
         Me.TextBox4.TabIndex = 27
         '
@@ -653,6 +663,7 @@ Partial Class Form2
         '
         Me.TextBox3.Location = New System.Drawing.Point(24, 140)
         Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.PlaceholderText = "Hernandez"
         Me.TextBox3.Size = New System.Drawing.Size(100, 23)
         Me.TextBox3.TabIndex = 25
         '
@@ -669,6 +680,7 @@ Partial Class Form2
         '
         Me.TextBox2.Location = New System.Drawing.Point(143, 83)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PlaceholderText = "Fernando"
         Me.TextBox2.Size = New System.Drawing.Size(100, 23)
         Me.TextBox2.TabIndex = 23
         '
@@ -685,6 +697,7 @@ Partial Class Form2
         '
         Me.TextBox1.Location = New System.Drawing.Point(24, 83)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.PlaceholderText = "Carlos"
         Me.TextBox1.Size = New System.Drawing.Size(100, 23)
         Me.TextBox1.TabIndex = 21
         '
