@@ -33,6 +33,11 @@ Partial Class Form2
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.DateTimePicker5 = New System.Windows.Forms.DateTimePicker()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -56,14 +61,10 @@ Partial Class Form2
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.Label18 = New System.Windows.Forms.Label()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Label15 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -98,6 +99,7 @@ Partial Class Form2
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
+        Me.GroupBox6.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -225,6 +227,9 @@ Partial Class Form2
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.Panel3.Controls.Add(Me.Button1)
+        Me.Panel3.Controls.Add(Me.CheckBox7)
+        Me.Panel3.Controls.Add(Me.GroupBox6)
         Me.Panel3.Controls.Add(Me.GroupBox5)
         Me.Panel3.Controls.Add(Me.CheckBox6)
         Me.Panel3.Controls.Add(Me.GroupBox4)
@@ -240,14 +245,10 @@ Partial Class Form2
         Me.Panel3.Controls.Add(Me.PictureBox6)
         Me.Panel3.Controls.Add(Me.TextBox11)
         Me.Panel3.Controls.Add(Me.Label19)
-        Me.Panel3.Controls.Add(Me.TextBox10)
-        Me.Panel3.Controls.Add(Me.Label18)
         Me.Panel3.Controls.Add(Me.TextBox9)
         Me.Panel3.Controls.Add(Me.Label17)
         Me.Panel3.Controls.Add(Me.TextBox8)
         Me.Panel3.Controls.Add(Me.Label16)
-        Me.Panel3.Controls.Add(Me.TextBox7)
-        Me.Panel3.Controls.Add(Me.Label15)
         Me.Panel3.Controls.Add(Me.Label14)
         Me.Panel3.Controls.Add(Me.TextBox6)
         Me.Panel3.Controls.Add(Me.Label13)
@@ -273,14 +274,63 @@ Partial Class Form2
         Me.Panel3.Size = New System.Drawing.Size(883, 425)
         Me.Panel3.TabIndex = 14
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(370, 10)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 77
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'CheckBox7
+        '
+        Me.CheckBox7.AutoSize = True
+        Me.CheckBox7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckBox7.Location = New System.Drawing.Point(666, 236)
+        Me.CheckBox7.Name = "CheckBox7"
+        Me.CheckBox7.Size = New System.Drawing.Size(84, 19)
+        Me.CheckBox7.TabIndex = 76
+        Me.CheckBox7.Text = "¿Cónyuge?"
+        Me.CheckBox7.UseVisualStyleBackColor = True
+        '
+        'GroupBox6
+        '
+        Me.GroupBox6.Controls.Add(Me.TextBox7)
+        Me.GroupBox6.Controls.Add(Me.Label15)
+        Me.GroupBox6.Enabled = False
+        Me.GroupBox6.Location = New System.Drawing.Point(666, 261)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Size = New System.Drawing.Size(173, 74)
+        Me.GroupBox6.TabIndex = 75
+        Me.GroupBox6.TabStop = False
+        Me.GroupBox6.Text = "Datos Cónyuge"
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(6, 40)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.PlaceholderText = "María Ordoñez"
+        Me.TextBox7.Size = New System.Drawing.Size(152, 23)
+        Me.TextBox7.TabIndex = 44
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(6, 22)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(102, 15)
+        Me.Label15.TabIndex = 43
+        Me.Label15.Text = "Nombre Cónyuge"
+        '
         'GroupBox5
         '
         Me.GroupBox5.Controls.Add(Me.DateTimePicker5)
         Me.GroupBox5.Controls.Add(Me.Label11)
         Me.GroupBox5.Enabled = False
-        Me.GroupBox5.Location = New System.Drawing.Point(718, 195)
+        Me.GroupBox5.Location = New System.Drawing.Point(666, 168)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(162, 60)
+        Me.GroupBox5.Size = New System.Drawing.Size(173, 60)
         Me.GroupBox5.TabIndex = 74
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Datos fallecimiento"
@@ -288,7 +338,7 @@ Partial Class Form2
         'DateTimePicker5
         '
         Me.DateTimePicker5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.DateTimePicker5.CustomFormat = "dd/mm/yyyy"
+        Me.DateTimePicker5.CustomFormat = "yyyy-mm-dd"
         Me.DateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateTimePicker5.Location = New System.Drawing.Point(6, 33)
         Me.DateTimePicker5.MaxDate = New Date(2100, 12, 31, 0, 0, 0, 0)
@@ -310,7 +360,7 @@ Partial Class Form2
         '
         Me.CheckBox6.AutoSize = True
         Me.CheckBox6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox6.Location = New System.Drawing.Point(724, 174)
+        Me.CheckBox6.Location = New System.Drawing.Point(672, 147)
         Me.CheckBox6.Name = "CheckBox6"
         Me.CheckBox6.Size = New System.Drawing.Size(83, 19)
         Me.CheckBox6.TabIndex = 73
@@ -322,9 +372,9 @@ Partial Class Form2
         Me.GroupBox4.Controls.Add(Me.DateTimePicker4)
         Me.GroupBox4.Controls.Add(Me.Label23)
         Me.GroupBox4.Enabled = False
-        Me.GroupBox4.Location = New System.Drawing.Point(721, 105)
+        Me.GroupBox4.Location = New System.Drawing.Point(666, 83)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(159, 60)
+        Me.GroupBox4.Size = New System.Drawing.Size(173, 60)
         Me.GroupBox4.TabIndex = 72
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Datos de retiro"
@@ -332,7 +382,7 @@ Partial Class Form2
         'DateTimePicker4
         '
         Me.DateTimePicker4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.DateTimePicker4.CustomFormat = "dd/mm/yyyy"
+        Me.DateTimePicker4.CustomFormat = "yyyy-mm-dd"
         Me.DateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateTimePicker4.Location = New System.Drawing.Point(6, 33)
         Me.DateTimePicker4.MaxDate = New Date(2100, 12, 31, 0, 0, 0, 0)
@@ -354,7 +404,7 @@ Partial Class Form2
         '
         Me.CheckBox5.AutoSize = True
         Me.CheckBox5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox5.Location = New System.Drawing.Point(727, 85)
+        Me.CheckBox5.Location = New System.Drawing.Point(666, 61)
         Me.CheckBox5.Name = "CheckBox5"
         Me.CheckBox5.Size = New System.Drawing.Size(80, 19)
         Me.CheckBox5.TabIndex = 71
@@ -368,9 +418,9 @@ Partial Class Form2
         Me.GroupBox3.Controls.Add(Me.Label28)
         Me.GroupBox3.Controls.Add(Me.Label27)
         Me.GroupBox3.Enabled = False
-        Me.GroupBox3.Location = New System.Drawing.Point(404, 227)
+        Me.GroupBox3.Location = New System.Drawing.Point(455, 271)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(185, 117)
+        Me.GroupBox3.Size = New System.Drawing.Size(175, 117)
         Me.GroupBox3.TabIndex = 70
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Datos migración"
@@ -378,7 +428,7 @@ Partial Class Form2
         'DateTimePicker3
         '
         Me.DateTimePicker3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.DateTimePicker3.CustomFormat = "dd/mm/yyyy"
+        Me.DateTimePicker3.CustomFormat = "yyyy-mm-dd"
         Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateTimePicker3.Location = New System.Drawing.Point(6, 33)
         Me.DateTimePicker3.MaxDate = New Date(2100, 12, 31, 0, 0, 0, 0)
@@ -417,7 +467,7 @@ Partial Class Form2
         '
         Me.CheckBox4.AutoSize = True
         Me.CheckBox4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox4.Location = New System.Drawing.Point(410, 209)
+        Me.CheckBox4.Location = New System.Drawing.Point(461, 253)
         Me.CheckBox4.Name = "CheckBox4"
         Me.CheckBox4.Size = New System.Drawing.Size(108, 19)
         Me.CheckBox4.TabIndex = 69
@@ -426,16 +476,16 @@ Partial Class Form2
         '
         'TextBox16
         '
-        Me.TextBox16.Location = New System.Drawing.Point(257, 289)
+        Me.TextBox16.Location = New System.Drawing.Point(314, 287)
         Me.TextBox16.Name = "TextBox16"
         Me.TextBox16.PlaceholderText = "Hombre"
-        Me.TextBox16.Size = New System.Drawing.Size(111, 23)
+        Me.TextBox16.Size = New System.Drawing.Size(119, 23)
         Me.TextBox16.TabIndex = 68
         '
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(260, 271)
+        Me.Label26.Location = New System.Drawing.Point(314, 269)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(45, 15)
         Me.Label26.TabIndex = 67
@@ -443,17 +493,17 @@ Partial Class Form2
         '
         'TextBox15
         '
-        Me.TextBox15.Location = New System.Drawing.Point(144, 192)
+        Me.TextBox15.Location = New System.Drawing.Point(172, 191)
         Me.TextBox15.Name = "TextBox15"
         Me.TextBox15.PlaceholderText = "Soltero"
-        Me.TextBox15.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox15.Size = New System.Drawing.Size(118, 23)
         Me.TextBox15.TabIndex = 66
         '
         'CheckBox3
         '
         Me.CheckBox3.AutoSize = True
         Me.CheckBox3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox3.Location = New System.Drawing.Point(633, 270)
+        Me.CheckBox3.Location = New System.Drawing.Point(25, 334)
         Me.CheckBox3.Name = "CheckBox3"
         Me.CheckBox3.Size = New System.Drawing.Size(86, 19)
         Me.CheckBox3.TabIndex = 65
@@ -464,7 +514,7 @@ Partial Class Form2
         '
         Me.CheckBox2.AutoSize = True
         Me.CheckBox2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox2.Location = New System.Drawing.Point(747, 271)
+        Me.CheckBox2.Location = New System.Drawing.Point(25, 370)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(102, 19)
         Me.CheckBox2.TabIndex = 64
@@ -475,7 +525,7 @@ Partial Class Form2
         '
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox1.Location = New System.Drawing.Point(411, 61)
+        Me.CheckBox1.Location = New System.Drawing.Point(461, 60)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(88, 19)
         Me.CheckBox1.TabIndex = 63
@@ -495,50 +545,33 @@ Partial Class Form2
         '
         'TextBox11
         '
-        Me.TextBox11.Location = New System.Drawing.Point(144, 342)
+        Me.TextBox11.Location = New System.Drawing.Point(24, 291)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.PlaceholderText = "4465278900114"
-        Me.TextBox11.Size = New System.Drawing.Size(126, 23)
+        Me.TextBox11.Size = New System.Drawing.Size(266, 23)
         Me.TextBox11.TabIndex = 52
         '
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(145, 324)
+        Me.Label19.Location = New System.Drawing.Point(25, 273)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(25, 15)
         Me.Label19.TabIndex = 51
         Me.Label19.Text = "DPI"
         '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(27, 342)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.PlaceholderText = "Guatemalteco"
-        Me.TextBox10.Size = New System.Drawing.Size(111, 23)
-        Me.TextBox10.TabIndex = 50
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(27, 324)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(77, 15)
-        Me.Label18.TabIndex = 49
-        Me.Label18.Text = "Nacionalidad"
-        '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(257, 192)
+        Me.TextBox9.Location = New System.Drawing.Point(314, 192)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.PlaceholderText = "34568987"
-        Me.TextBox9.Size = New System.Drawing.Size(111, 23)
+        Me.TextBox9.Size = New System.Drawing.Size(119, 23)
         Me.TextBox9.TabIndex = 48
         '
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(271, 174)
+        Me.Label17.Location = New System.Drawing.Point(314, 171)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(52, 15)
         Me.Label17.TabIndex = 47
@@ -546,42 +579,25 @@ Partial Class Form2
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(27, 289)
+        Me.TextBox8.Location = New System.Drawing.Point(27, 245)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.PlaceholderText = "Lote 848, Amatitlán"
-        Me.TextBox8.Size = New System.Drawing.Size(217, 23)
+        Me.TextBox8.Size = New System.Drawing.Size(263, 23)
         Me.TextBox8.TabIndex = 46
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(27, 271)
+        Me.Label16.Location = New System.Drawing.Point(27, 227)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(105, 15)
         Me.Label16.TabIndex = 45
         Me.Label16.Text = "Dirección Vivienda"
         '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(27, 245)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.PlaceholderText = "María Ordoñez"
-        Me.TextBox7.Size = New System.Drawing.Size(216, 23)
-        Me.TextBox7.TabIndex = 44
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(23, 227)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(102, 15)
-        Me.Label15.TabIndex = 43
-        Me.Label15.Text = "Nombre Cónyuge"
-        '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(143, 174)
+        Me.Label14.Location = New System.Drawing.Point(172, 174)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(68, 15)
         Me.Label14.TabIndex = 42
@@ -592,7 +608,7 @@ Partial Class Form2
         Me.TextBox6.Location = New System.Drawing.Point(27, 192)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.PlaceholderText = "Trabajador"
-        Me.TextBox6.Size = New System.Drawing.Size(98, 23)
+        Me.TextBox6.Size = New System.Drawing.Size(125, 23)
         Me.TextBox6.TabIndex = 39
         '
         'Label13
@@ -606,15 +622,15 @@ Partial Class Form2
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(257, 140)
+        Me.TextBox5.Location = New System.Drawing.Point(314, 140)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(111, 23)
+        Me.TextBox5.Size = New System.Drawing.Size(119, 23)
         Me.TextBox5.TabIndex = 37
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(260, 122)
+        Me.Label12.Location = New System.Drawing.Point(314, 122)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(108, 15)
         Me.Label12.TabIndex = 36
@@ -629,16 +645,16 @@ Partial Class Form2
         Me.GroupBox2.Controls.Add(Me.DateTimePicker2)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Enabled = False
-        Me.GroupBox2.Location = New System.Drawing.Point(405, 83)
+        Me.GroupBox2.Location = New System.Drawing.Point(455, 82)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(294, 119)
+        Me.GroupBox2.Size = New System.Drawing.Size(175, 172)
         Me.GroupBox2.TabIndex = 32
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Datos de Bautizo"
         '
         'TextBox13
         '
-        Me.TextBox13.Location = New System.Drawing.Point(5, 89)
+        Me.TextBox13.Location = New System.Drawing.Point(6, 135)
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.PlaceholderText = "Miembro"
         Me.TextBox13.Size = New System.Drawing.Size(151, 23)
@@ -647,7 +663,7 @@ Partial Class Form2
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(5, 71)
+        Me.Label21.Location = New System.Drawing.Point(6, 117)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(140, 15)
         Me.Label21.TabIndex = 55
@@ -655,7 +671,7 @@ Partial Class Form2
         '
         'TextBox12
         '
-        Me.TextBox12.Location = New System.Drawing.Point(130, 41)
+        Me.TextBox12.Location = New System.Drawing.Point(6, 85)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.PlaceholderText = "Hugo Hernandez"
         Me.TextBox12.Size = New System.Drawing.Size(151, 23)
@@ -664,7 +680,7 @@ Partial Class Form2
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(130, 23)
+        Me.Label20.Location = New System.Drawing.Point(6, 67)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(109, 15)
         Me.Label20.TabIndex = 53
@@ -673,13 +689,13 @@ Partial Class Form2
         'DateTimePicker2
         '
         Me.DateTimePicker2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.DateTimePicker2.CustomFormat = "dd/mm/yyyy"
+        Me.DateTimePicker2.CustomFormat = "yyyy-mm-dd"
         Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateTimePicker2.Location = New System.Drawing.Point(6, 41)
         Me.DateTimePicker2.MaxDate = New Date(2100, 12, 31, 0, 0, 0, 0)
         Me.DateTimePicker2.MinDate = New Date(1910, 1, 1, 0, 0, 0, 0)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(118, 23)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(151, 23)
         Me.DateTimePicker2.TabIndex = 30
         '
         'Label10
@@ -694,7 +710,7 @@ Partial Class Form2
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(251, 227)
+        Me.Label9.Location = New System.Drawing.Point(314, 225)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(119, 15)
         Me.Label9.TabIndex = 29
@@ -703,27 +719,28 @@ Partial Class Form2
         'DateTimePicker1
         '
         Me.DateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.DateTimePicker1.CustomFormat = "dd/mm/yyyy"
+        Me.DateTimePicker1.CustomFormat = "yyyy-mm-dd"
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(257, 245)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(314, 243)
         Me.DateTimePicker1.MaxDate = New Date(2100, 12, 31, 0, 0, 0, 0)
         Me.DateTimePicker1.MinDate = New Date(1910, 1, 1, 0, 0, 0, 0)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(111, 23)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(119, 23)
         Me.DateTimePicker1.TabIndex = 28
+        Me.DateTimePicker1.Value = New Date(2022, 9, 22, 0, 0, 0, 0)
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(144, 140)
+        Me.TextBox4.Location = New System.Drawing.Point(172, 143)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.PlaceholderText = "Pérez"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox4.Size = New System.Drawing.Size(118, 23)
         Me.TextBox4.TabIndex = 27
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(142, 122)
+        Me.Label8.Location = New System.Drawing.Point(171, 122)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(99, 15)
         Me.Label8.TabIndex = 26
@@ -734,7 +751,7 @@ Partial Class Form2
         Me.TextBox3.Location = New System.Drawing.Point(27, 140)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.PlaceholderText = "Hernandez"
-        Me.TextBox3.Size = New System.Drawing.Size(98, 23)
+        Me.TextBox3.Size = New System.Drawing.Size(125, 23)
         Me.TextBox3.TabIndex = 25
         '
         'Label7
@@ -748,16 +765,16 @@ Partial Class Form2
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(145, 83)
+        Me.TextBox2.Location = New System.Drawing.Point(174, 83)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PlaceholderText = "Fernando"
-        Me.TextBox2.Size = New System.Drawing.Size(98, 23)
+        Me.TextBox2.Size = New System.Drawing.Size(116, 23)
         Me.TextBox2.TabIndex = 23
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(143, 65)
+        Me.Label6.Location = New System.Drawing.Point(172, 65)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(101, 15)
         Me.Label6.TabIndex = 22
@@ -765,10 +782,10 @@ Partial Class Form2
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(27, 83)
+        Me.TextBox1.Location = New System.Drawing.Point(25, 83)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.PlaceholderText = "Carlos"
-        Me.TextBox1.Size = New System.Drawing.Size(97, 23)
+        Me.TextBox1.Size = New System.Drawing.Size(127, 23)
         Me.TextBox1.TabIndex = 21
         '
         'Label4
@@ -818,6 +835,7 @@ Partial Class Form2
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(114, Byte), Integer))
         Me.Label5.Location = New System.Drawing.Point(751, 19)
@@ -848,6 +866,8 @@ Partial Class Form2
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        Me.GroupBox6.ResumeLayout(False)
+        Me.GroupBox6.PerformLayout()
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox5.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
@@ -893,8 +913,6 @@ Partial Class Form2
     Friend WithEvents Label10 As Label
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents Label19 As Label
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents Label18 As Label
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents Label17 As Label
     Friend WithEvents TextBox8 As TextBox
@@ -930,4 +948,7 @@ Partial Class Form2
     Friend WithEvents DateTimePicker4 As DateTimePicker
     Friend WithEvents Label23 As Label
     Friend WithEvents CheckBox5 As CheckBox
+    Friend WithEvents CheckBox7 As CheckBox
+    Friend WithEvents GroupBox6 As GroupBox
+    Friend WithEvents Button1 As Button
 End Class

@@ -72,31 +72,22 @@ Public Class Form2
         comando.Connection = conexion
 
         Try
-            conexion.ConnectionString = "Server=127.0.0.1;User ID=root;Password=root;Database=Person;Port=3308;"
+            conexion.ConnectionString = "Server=127.0.0.1;User ID=root;Password=root;Database=registro_usuario;Port=3308;"
             conexion.Open()
-            'MsgBox("Conectado")
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
 
-        comando.CommandText =
-            "INSERT INTO Person.person (first_name,middle_name,last_name,second_last_name,married_name,profession,marital_status,phone_number,dpi,nationality,home_address,birthday,can_read,can_write,baptized,date_baptized,baptism_minister,church_privileges,address_church,date_death,picture)
-	VALUES('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox5.Text + "','" + TextBox6.Text + "','" + TextBox15.Text + "','" + TextBox9.Text + "','" + TextBox11.Text + "','" + TextBox10.Text + "','" + TextBox8.Text + "','" + DateTimePicker1.Value.ToShortDateString + "'," + 1 + "," + 1 + "," + 1 + ",'" + DateTimePicker2.Value.ToShortDateString + "','" + TextBox12.Text + "','" + TextBox13.Text + "','" + TextBox15.Text + "','" + 2100 - 1 - 1 + "'," + 0 + ")"
+        comando.CommandText = "INSERT INTO registro_usuario.persona (sabe_leer) VALUES ('" + CheckBox1.Checked + "')"
 
 
-        Dim r As MySqlDataReader
 
-        r = comando.ExecuteReader
-
-        If r.HasRows <> False Then
-            r.Read()
-            MsgBox(r.GetInt64("dbid"))
-
-        Else
-            MsgBox("Usuario y/o contrase;a Incorrectos")
+        comando.ExecuteNonQuery()
+        MsgBox("Datos insertados")
+        conexion.Close()
 
 
-        End If
+
 
     End Sub
 
@@ -136,5 +127,30 @@ Public Class Form2
         ElseIf CheckBox6.Checked = False Then
             GroupBox5.Enabled = False
         End If
+    End Sub
+
+    Private Sub CheckBox7_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox7.CheckedChanged
+        If CheckBox7.Checked = True Then
+            GroupBox6.Enabled = True
+        ElseIf CheckBox7.Checked = False Then
+            GroupBox6.Enabled = False
+        End If
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        '(CheckBox3.Checked.ToString)
+        MsgBox(CheckBox3.CheckState)
+        MsgBox(CheckBox3.CheckAlign)
+        MsgBox(CheckBox3.Checked.GetTypeCode)
+        MsgBox(CheckBox3.Checked.GetType)
+        ' MsgBox(CheckBox3.CheckState.ToString)
+
+
+
+
+    End Sub
+
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+
     End Sub
 End Class
