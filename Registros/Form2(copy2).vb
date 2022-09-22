@@ -1,7 +1,6 @@
-﻿Imports System.Runtime.CompilerServices
-Imports MySqlConnector
-Imports MySqlConnector.MySqlConnection
-Public Class Form2
+﻿Imports MySqlConnector
+
+Public Class Form2_copy2_
     Dim movement As Boolean = False
     Dim filefoto As String
     Private Sub Panel1_MouseDown(sender As Object, e As MouseEventArgs) Handles Panel1.MouseDown
@@ -42,13 +41,13 @@ Public Class Form2
 
     End Sub
 
-    Private Sub RadioButton1_Click(sender As Object, e As EventArgs)
+    Private Sub RadioButton1_Click(sender As Object, e As EventArgs) Handles RadioButton1.Click
         '  If RadioButton1.Checked = True And RadioButton2.Checked = False Then
         ' GroupBox2.Enabled = True
         '  End If
     End Sub
 
-    Private Sub RadioButton2_Click(sender As Object, e As EventArgs)
+    Private Sub RadioButton2_Click(sender As Object, e As EventArgs) Handles RadioButton2.Click
         ' If RadioButton1.Checked = False And RadioButton2.Checked = True Then
         ' GroupBox2.Enabled = False
         ' End If
@@ -62,7 +61,15 @@ Public Class Form2
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        OpenFileDialog1.Filter = "PNG| *.png|JPG |*.jpg"
+        OpenFileDialog1.FileName = " Fotografía"
+        OpenFileDialog1.Title = "Subir Archivo"
+
+        If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+            filefoto = OpenFileDialog1.FileName
+            PictureBox8.Image = System.Drawing.Image.FromFile(filefoto)
+        End If
     End Sub
 
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
@@ -81,7 +88,7 @@ Public Class Form2
 
         comando.CommandText =
             "INSERT INTO Person.person (first_name,middle_name,last_name,second_last_name,married_name,profession,marital_status,phone_number,dpi,nationality,home_address,birthday,can_read,can_write,baptized,date_baptized,baptism_minister,church_privileges,address_church,date_death,picture)
-	VALUES('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox5.Text + "','" + TextBox6.Text + "','" + TextBox15.Text + "','" + TextBox9.Text + "','" + TextBox11.Text + "','" + TextBox10.Text + "','" + TextBox8.Text + "','" + DateTimePicker1.Value.ToShortDateString + "'," + 1 + "," + 1 + "," + 1 + ",'" + DateTimePicker2.Value.ToShortDateString + "','" + TextBox12.Text + "','" + TextBox13.Text + "','" + TextBox15.Text + "','" + 2100 - 1 - 1 + "'," + 0 + ")"
+	VALUES('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox5.Text + "','" + TextBox6.Text + "','" + TextBox15.Text + "','" + TextBox9.Text + "','" + TextBox11.Text + "','" + TextBox10.Text + "','" + TextBox8.Text + "','" + DateTimePicker1.Value.ToShortDateString + "'," + 1 + "," + 1 + "," + 1 + ",'" + DateTimePicker2.Value.ToShortDateString + "','" + TextBox12.Text + "','" + TextBox13.Text + "','" + TextBox14.Text + "','" + 2100 - 1 - 1 + "'," + 0 + ")"
 
 
         Dim r As MySqlDataReader
@@ -106,7 +113,7 @@ Public Class Form2
         ElseIf CheckBox1.Checked = False Then
             GroupBox2.Enabled = False
         End If
-
+        MsgBox(CheckBox1.Checked.ToString)
 
     End Sub
 
@@ -116,25 +123,6 @@ Public Class Form2
         ElseIf CheckBox4.Checked = False Then
             GroupBox3.Enabled = False
         End If
-
-    End Sub
-
-    Private Sub CheckBox5_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox5.CheckedChanged
-        If CheckBox5.Checked = True Then
-            GroupBox4.Enabled = True
-        ElseIf CheckBox5.Checked = False Then
-            GroupBox4.Enabled = False
-        End If
-
-    End Sub
-
-    Private Sub CheckBox6_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox6.CheckedChanged
-
-
-        If CheckBox6.Checked = True Then
-            GroupBox5.Enabled = True
-        ElseIf CheckBox6.Checked = False Then
-            GroupBox5.Enabled = False
-        End If
+        MsgBox(CheckBox4.Checked.ToString)
     End Sub
 End Class

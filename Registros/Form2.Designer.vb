@@ -33,15 +33,27 @@ Partial Class Form2
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.DateTimePicker5 = New System.Windows.Forms.DateTimePicker()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.DateTimePicker4 = New System.Windows.Forms.DateTimePicker()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
+        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
+        Me.TextBox18 = New System.Windows.Forms.TextBox()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
@@ -53,17 +65,11 @@ Partial Class Form2
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.Label22 = New System.Windows.Forms.Label()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
@@ -84,8 +90,6 @@ Partial Class Form2
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -94,10 +98,12 @@ Partial Class Form2
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox5.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -178,9 +184,9 @@ Partial Class Form2
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(11, 70)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(108, 30)
+        Me.Label3.Size = New System.Drawing.Size(192, 30)
         Me.Label3.TabIndex = 12
-        Me.Label3.Text = "@Usuario"
+        Me.Label3.Text = "@nombre_usuario"
         '
         'PictureBox4
         '
@@ -219,15 +225,19 @@ Partial Class Form2
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.Panel3.Controls.Add(Me.PictureBox8)
-        Me.Panel3.Controls.Add(Me.Button1)
-        Me.Panel3.Controls.Add(Me.Label25)
-        Me.Panel3.Controls.Add(Me.Label24)
-        Me.Panel3.Controls.Add(Me.RadioButton5)
-        Me.Panel3.Controls.Add(Me.RadioButton6)
-        Me.Panel3.Controls.Add(Me.Label23)
-        Me.Panel3.Controls.Add(Me.RadioButton3)
-        Me.Panel3.Controls.Add(Me.RadioButton4)
+        Me.Panel3.Controls.Add(Me.GroupBox5)
+        Me.Panel3.Controls.Add(Me.CheckBox6)
+        Me.Panel3.Controls.Add(Me.GroupBox4)
+        Me.Panel3.Controls.Add(Me.CheckBox5)
+        Me.Panel3.Controls.Add(Me.GroupBox3)
+        Me.Panel3.Controls.Add(Me.CheckBox4)
+        Me.Panel3.Controls.Add(Me.TextBox16)
+        Me.Panel3.Controls.Add(Me.Label26)
+        Me.Panel3.Controls.Add(Me.TextBox15)
+        Me.Panel3.Controls.Add(Me.CheckBox3)
+        Me.Panel3.Controls.Add(Me.CheckBox2)
+        Me.Panel3.Controls.Add(Me.CheckBox1)
+        Me.Panel3.Controls.Add(Me.PictureBox6)
         Me.Panel3.Controls.Add(Me.TextBox11)
         Me.Panel3.Controls.Add(Me.Label19)
         Me.Panel3.Controls.Add(Me.TextBox10)
@@ -239,14 +249,10 @@ Partial Class Form2
         Me.Panel3.Controls.Add(Me.TextBox7)
         Me.Panel3.Controls.Add(Me.Label15)
         Me.Panel3.Controls.Add(Me.Label14)
-        Me.Panel3.Controls.Add(Me.ComboBox1)
         Me.Panel3.Controls.Add(Me.TextBox6)
         Me.Panel3.Controls.Add(Me.Label13)
         Me.Panel3.Controls.Add(Me.TextBox5)
         Me.Panel3.Controls.Add(Me.Label12)
-        Me.Panel3.Controls.Add(Me.Label11)
-        Me.Panel3.Controls.Add(Me.RadioButton2)
-        Me.Panel3.Controls.Add(Me.RadioButton1)
         Me.Panel3.Controls.Add(Me.GroupBox2)
         Me.Panel3.Controls.Add(Me.Label9)
         Me.Panel3.Controls.Add(Me.DateTimePicker1)
@@ -262,118 +268,243 @@ Partial Class Form2
         Me.Panel3.Controls.Add(Me.PictureBox7)
         Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Controls.Add(Me.Label5)
-        Me.Panel3.Controls.Add(Me.PictureBox6)
         Me.Panel3.Location = New System.Drawing.Point(12, 132)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(883, 425)
         Me.Panel3.TabIndex = 14
         '
-        'PictureBox8
+        'GroupBox5
         '
-        Me.PictureBox8.Location = New System.Drawing.Point(747, 87)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(111, 117)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox8.TabIndex = 62
-        Me.PictureBox8.TabStop = False
+        Me.GroupBox5.Controls.Add(Me.DateTimePicker5)
+        Me.GroupBox5.Controls.Add(Me.Label11)
+        Me.GroupBox5.Enabled = False
+        Me.GroupBox5.Location = New System.Drawing.Point(718, 195)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(162, 60)
+        Me.GroupBox5.TabIndex = 74
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "Datos fallecimiento"
         '
-        'Button1
+        'DateTimePicker5
         '
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Button1.Location = New System.Drawing.Point(747, 210)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(111, 23)
-        Me.Button1.TabIndex = 61
-        Me.Button1.Text = "Subir Imagen"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.DateTimePicker5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.DateTimePicker5.CustomFormat = "dd/mm/yyyy"
+        Me.DateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker5.Location = New System.Drawing.Point(6, 33)
+        Me.DateTimePicker5.MaxDate = New Date(2100, 12, 31, 0, 0, 0, 0)
+        Me.DateTimePicker5.MinDate = New Date(1910, 1, 1, 0, 0, 0, 0)
+        Me.DateTimePicker5.Name = "DateTimePicker5"
+        Me.DateTimePicker5.Size = New System.Drawing.Size(146, 23)
+        Me.DateTimePicker5.TabIndex = 71
         '
-        'Label25
+        'Label11
         '
-        Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(744, 65)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(61, 15)
-        Me.Label25.TabIndex = 60
-        Me.Label25.Text = "Fotografía"
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(6, 19)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(78, 15)
+        Me.Label11.TabIndex = 59
+        Me.Label11.Text = "Fecha deceso"
         '
-        'Label24
+        'CheckBox6
         '
-        Me.Label24.AutoSize = True
-        Me.Label24.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label24.ForeColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(114, Byte), Integer))
-        Me.Label24.Location = New System.Drawing.Point(506, 303)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(117, 21)
-        Me.Label24.TabIndex = 58
-        Me.Label24.Text = "¿Sabe Escribir?"
+        Me.CheckBox6.AutoSize = True
+        Me.CheckBox6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckBox6.Location = New System.Drawing.Point(724, 174)
+        Me.CheckBox6.Name = "CheckBox6"
+        Me.CheckBox6.Size = New System.Drawing.Size(83, 19)
+        Me.CheckBox6.TabIndex = 73
+        Me.CheckBox6.Text = "¿Fallecido?"
+        Me.CheckBox6.UseVisualStyleBackColor = True
         '
-        'RadioButton5
+        'GroupBox4
         '
-        Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Location = New System.Drawing.Point(555, 326)
-        Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(41, 19)
-        Me.RadioButton5.TabIndex = 57
-        Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "No"
-        Me.RadioButton5.UseVisualStyleBackColor = True
+        Me.GroupBox4.Controls.Add(Me.DateTimePicker4)
+        Me.GroupBox4.Controls.Add(Me.Label23)
+        Me.GroupBox4.Enabled = False
+        Me.GroupBox4.Location = New System.Drawing.Point(721, 105)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(159, 60)
+        Me.GroupBox4.TabIndex = 72
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Datos de retiro"
         '
-        'RadioButton6
+        'DateTimePicker4
         '
-        Me.RadioButton6.AutoSize = True
-        Me.RadioButton6.Location = New System.Drawing.Point(515, 327)
-        Me.RadioButton6.Name = "RadioButton6"
-        Me.RadioButton6.Size = New System.Drawing.Size(34, 19)
-        Me.RadioButton6.TabIndex = 56
-        Me.RadioButton6.TabStop = True
-        Me.RadioButton6.Text = "Si"
-        Me.RadioButton6.UseVisualStyleBackColor = True
+        Me.DateTimePicker4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.DateTimePicker4.CustomFormat = "dd/mm/yyyy"
+        Me.DateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker4.Location = New System.Drawing.Point(6, 33)
+        Me.DateTimePicker4.MaxDate = New Date(2100, 12, 31, 0, 0, 0, 0)
+        Me.DateTimePicker4.MinDate = New Date(1910, 1, 1, 0, 0, 0, 0)
+        Me.DateTimePicker4.Name = "DateTimePicker4"
+        Me.DateTimePicker4.Size = New System.Drawing.Size(146, 23)
+        Me.DateTimePicker4.TabIndex = 71
         '
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label23.ForeColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(114, Byte), Integer))
-        Me.Label23.Location = New System.Drawing.Point(404, 303)
+        Me.Label23.Location = New System.Drawing.Point(6, 18)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(96, 21)
-        Me.Label23.TabIndex = 55
-        Me.Label23.Text = "¿Sabe Leer?"
+        Me.Label23.Size = New System.Drawing.Size(88, 15)
+        Me.Label23.TabIndex = 59
+        Me.Label23.Text = "Fecha de Retiro"
         '
-        'RadioButton3
+        'CheckBox5
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(449, 326)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(41, 19)
-        Me.RadioButton3.TabIndex = 54
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "No"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.CheckBox5.AutoSize = True
+        Me.CheckBox5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckBox5.Location = New System.Drawing.Point(727, 85)
+        Me.CheckBox5.Name = "CheckBox5"
+        Me.CheckBox5.Size = New System.Drawing.Size(80, 19)
+        Me.CheckBox5.TabIndex = 71
+        Me.CheckBox5.Text = "¿Retirado?"
+        Me.CheckBox5.UseVisualStyleBackColor = True
         '
-        'RadioButton4
+        'GroupBox3
         '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(409, 327)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(34, 19)
-        Me.RadioButton4.TabIndex = 53
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "Si"
-        Me.RadioButton4.UseVisualStyleBackColor = True
+        Me.GroupBox3.Controls.Add(Me.DateTimePicker3)
+        Me.GroupBox3.Controls.Add(Me.TextBox18)
+        Me.GroupBox3.Controls.Add(Me.Label28)
+        Me.GroupBox3.Controls.Add(Me.Label27)
+        Me.GroupBox3.Enabled = False
+        Me.GroupBox3.Location = New System.Drawing.Point(404, 227)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(185, 117)
+        Me.GroupBox3.TabIndex = 70
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Datos migración"
+        '
+        'DateTimePicker3
+        '
+        Me.DateTimePicker3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.DateTimePicker3.CustomFormat = "dd/mm/yyyy"
+        Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker3.Location = New System.Drawing.Point(6, 33)
+        Me.DateTimePicker3.MaxDate = New Date(2100, 12, 31, 0, 0, 0, 0)
+        Me.DateTimePicker3.MinDate = New Date(1910, 1, 1, 0, 0, 0, 0)
+        Me.DateTimePicker3.Name = "DateTimePicker3"
+        Me.DateTimePicker3.Size = New System.Drawing.Size(146, 23)
+        Me.DateTimePicker3.TabIndex = 71
+        '
+        'TextBox18
+        '
+        Me.TextBox18.Location = New System.Drawing.Point(6, 81)
+        Me.TextBox18.Name = "TextBox18"
+        Me.TextBox18.PlaceholderText = "Estados Unidos"
+        Me.TextBox18.Size = New System.Drawing.Size(151, 23)
+        Me.TextBox18.TabIndex = 62
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Location = New System.Drawing.Point(6, 63)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(101, 15)
+        Me.Label28.TabIndex = 61
+        Me.Label28.Text = "País de migración"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Location = New System.Drawing.Point(6, 19)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(111, 15)
+        Me.Label27.TabIndex = 59
+        Me.Label27.Text = "Fecha de migración"
+        '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckBox4.Location = New System.Drawing.Point(410, 209)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(108, 19)
+        Me.CheckBox4.TabIndex = 69
+        Me.CheckBox4.Text = "¿Fuera del país?"
+        Me.CheckBox4.UseVisualStyleBackColor = True
+        '
+        'TextBox16
+        '
+        Me.TextBox16.Location = New System.Drawing.Point(257, 289)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.PlaceholderText = "Hombre"
+        Me.TextBox16.Size = New System.Drawing.Size(111, 23)
+        Me.TextBox16.TabIndex = 68
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Location = New System.Drawing.Point(260, 271)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(45, 15)
+        Me.Label26.TabIndex = 67
+        Me.Label26.Text = "Género"
+        '
+        'TextBox15
+        '
+        Me.TextBox15.Location = New System.Drawing.Point(144, 192)
+        Me.TextBox15.Name = "TextBox15"
+        Me.TextBox15.PlaceholderText = "Soltero"
+        Me.TextBox15.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox15.TabIndex = 66
+        '
+        'CheckBox3
+        '
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckBox3.Location = New System.Drawing.Point(633, 270)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(86, 19)
+        Me.CheckBox3.TabIndex = 65
+        Me.CheckBox3.Text = "¿Sabe Leer?"
+        Me.CheckBox3.UseVisualStyleBackColor = True
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckBox2.Location = New System.Drawing.Point(747, 271)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(102, 19)
+        Me.CheckBox2.TabIndex = 64
+        Me.CheckBox2.Text = "¿Sabe Escribir?"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckBox1.Location = New System.Drawing.Point(411, 61)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(88, 19)
+        Me.CheckBox1.TabIndex = 63
+        Me.CheckBox1.Text = "¿Bautizado?"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.BackgroundImage = Global.Registros.My.Resources.Resources.guardar_el_archivo
+        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox6.Location = New System.Drawing.Point(747, 14)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(27, 29)
+        Me.PictureBox6.TabIndex = 0
+        Me.PictureBox6.TabStop = False
         '
         'TextBox11
         '
-        Me.TextBox11.Location = New System.Drawing.Point(158, 356)
+        Me.TextBox11.Location = New System.Drawing.Point(144, 342)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.PlaceholderText = "4465278900114"
-        Me.TextBox11.Size = New System.Drawing.Size(130, 23)
+        Me.TextBox11.Size = New System.Drawing.Size(126, 23)
         Me.TextBox11.TabIndex = 52
         '
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(159, 338)
+        Me.Label19.Location = New System.Drawing.Point(145, 324)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(25, 15)
         Me.Label19.TabIndex = 51
@@ -381,7 +512,7 @@ Partial Class Form2
         '
         'TextBox10
         '
-        Me.TextBox10.Location = New System.Drawing.Point(27, 356)
+        Me.TextBox10.Location = New System.Drawing.Point(27, 342)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.PlaceholderText = "Guatemalteco"
         Me.TextBox10.Size = New System.Drawing.Size(111, 23)
@@ -390,7 +521,7 @@ Partial Class Form2
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(26, 338)
+        Me.Label18.Location = New System.Drawing.Point(27, 324)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(77, 15)
         Me.Label18.TabIndex = 49
@@ -398,16 +529,16 @@ Partial Class Form2
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(270, 192)
+        Me.TextBox9.Location = New System.Drawing.Point(257, 192)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.PlaceholderText = "34568987"
-        Me.TextBox9.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox9.Size = New System.Drawing.Size(111, 23)
         Me.TextBox9.TabIndex = 48
         '
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(273, 174)
+        Me.Label17.Location = New System.Drawing.Point(271, 174)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(52, 15)
         Me.Label17.TabIndex = 47
@@ -415,16 +546,16 @@ Partial Class Form2
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(26, 305)
+        Me.TextBox8.Location = New System.Drawing.Point(27, 289)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.PlaceholderText = "Lote 848, Amatitlán"
-        Me.TextBox8.Size = New System.Drawing.Size(348, 23)
+        Me.TextBox8.Size = New System.Drawing.Size(217, 23)
         Me.TextBox8.TabIndex = 46
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(27, 287)
+        Me.Label16.Location = New System.Drawing.Point(27, 271)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(105, 15)
         Me.Label16.TabIndex = 45
@@ -435,7 +566,7 @@ Partial Class Form2
         Me.TextBox7.Location = New System.Drawing.Point(27, 245)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.PlaceholderText = "María Ordoñez"
-        Me.TextBox7.Size = New System.Drawing.Size(217, 23)
+        Me.TextBox7.Size = New System.Drawing.Size(216, 23)
         Me.TextBox7.TabIndex = 44
         '
         'Label15
@@ -456,21 +587,12 @@ Partial Class Form2
         Me.Label14.TabIndex = 42
         Me.Label14.Text = "Estado Civil"
         '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"", "Soltero", "Casado", "Divorcido/a", "Viudo/a"})
-        Me.ComboBox1.Location = New System.Drawing.Point(143, 192)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 23)
-        Me.ComboBox1.TabIndex = 41
-        '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(24, 192)
+        Me.TextBox6.Location = New System.Drawing.Point(27, 192)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.PlaceholderText = "Trabajador"
-        Me.TextBox6.Size = New System.Drawing.Size(111, 23)
+        Me.TextBox6.Size = New System.Drawing.Size(98, 23)
         Me.TextBox6.TabIndex = 39
         '
         'Label13
@@ -498,43 +620,8 @@ Partial Class Form2
         Me.Label12.TabIndex = 36
         Me.Label12.Text = "Apellido de Casada"
         '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(114, Byte), Integer))
-        Me.Label11.Location = New System.Drawing.Point(404, 54)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(96, 21)
-        Me.Label11.TabIndex = 35
-        Me.Label11.Text = "¿Bautizado?"
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(449, 77)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(41, 19)
-        Me.RadioButton2.TabIndex = 34
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "No"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(409, 78)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(34, 19)
-        Me.RadioButton1.TabIndex = 33
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Si"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.TextBox14)
-        Me.GroupBox2.Controls.Add(Me.Label22)
         Me.GroupBox2.Controls.Add(Me.TextBox13)
         Me.GroupBox2.Controls.Add(Me.Label21)
         Me.GroupBox2.Controls.Add(Me.TextBox12)
@@ -542,29 +629,12 @@ Partial Class Form2
         Me.GroupBox2.Controls.Add(Me.DateTimePicker2)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Enabled = False
-        Me.GroupBox2.Location = New System.Drawing.Point(404, 103)
+        Me.GroupBox2.Location = New System.Drawing.Point(405, 83)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(308, 180)
+        Me.GroupBox2.Size = New System.Drawing.Size(294, 119)
         Me.GroupBox2.TabIndex = 32
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Datos de Bautizo"
-        '
-        'TextBox14
-        '
-        Me.TextBox14.Location = New System.Drawing.Point(6, 142)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.PlaceholderText = "Lote 849, Amatitlán Guatemala"
-        Me.TextBox14.Size = New System.Drawing.Size(275, 23)
-        Me.TextBox14.TabIndex = 58
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(7, 124)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(93, 15)
-        Me.Label22.TabIndex = 57
-        Me.Label22.Text = "Dirección iglesia"
         '
         'TextBox13
         '
@@ -635,16 +705,16 @@ Partial Class Form2
         Me.DateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.DateTimePicker1.CustomFormat = "dd/mm/yyyy"
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(251, 245)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(257, 245)
         Me.DateTimePicker1.MaxDate = New Date(2100, 12, 31, 0, 0, 0, 0)
         Me.DateTimePicker1.MinDate = New Date(1910, 1, 1, 0, 0, 0, 0)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(146, 23)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(111, 23)
         Me.DateTimePicker1.TabIndex = 28
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(139, 140)
+        Me.TextBox4.Location = New System.Drawing.Point(144, 140)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.PlaceholderText = "Pérez"
         Me.TextBox4.Size = New System.Drawing.Size(100, 23)
@@ -661,10 +731,10 @@ Partial Class Form2
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(24, 140)
+        Me.TextBox3.Location = New System.Drawing.Point(27, 140)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.PlaceholderText = "Hernandez"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox3.Size = New System.Drawing.Size(98, 23)
         Me.TextBox3.TabIndex = 25
         '
         'Label7
@@ -678,10 +748,10 @@ Partial Class Form2
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(143, 83)
+        Me.TextBox2.Location = New System.Drawing.Point(145, 83)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PlaceholderText = "Fernando"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox2.Size = New System.Drawing.Size(98, 23)
         Me.TextBox2.TabIndex = 23
         '
         'Label6
@@ -695,10 +765,10 @@ Partial Class Form2
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(24, 83)
+        Me.TextBox1.Location = New System.Drawing.Point(27, 83)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.PlaceholderText = "Carlos"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox1.Size = New System.Drawing.Size(97, 23)
         Me.TextBox1.TabIndex = 21
         '
         'Label4
@@ -750,26 +820,11 @@ Partial Class Form2
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(11, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(114, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(804, 18)
+        Me.Label5.Location = New System.Drawing.Point(751, 19)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(68, 21)
+        Me.Label5.Size = New System.Drawing.Size(88, 21)
         Me.Label5.TabIndex = 16
-        Me.Label5.Text = "Guardar"
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.BackgroundImage = Global.Registros.My.Resources.Resources.guardar_el_archivo
-        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox6.Location = New System.Drawing.Point(778, 14)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(27, 29)
-        Me.PictureBox6.TabIndex = 0
-        Me.PictureBox6.TabStop = False
-        '
-        'OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        Me.Label5.Text = "     Guardar"
         '
         'Form2
         '
@@ -793,11 +848,16 @@ Partial Class Form2
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -831,14 +891,6 @@ Partial Class Form2
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents DateTimePicker2 As DateTimePicker
     Friend WithEvents Label10 As Label
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents Label24 As Label
-    Friend WithEvents RadioButton5 As RadioButton
-    Friend WithEvents RadioButton6 As RadioButton
-    Friend WithEvents Label23 As Label
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents Label19 As Label
     Friend WithEvents TextBox10 As TextBox
@@ -850,20 +902,32 @@ Partial Class Form2
     Friend WithEvents TextBox7 As TextBox
     Friend WithEvents Label15 As Label
     Friend WithEvents Label14 As Label
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label13 As Label
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label12 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents Label22 As Label
     Friend WithEvents TextBox13 As TextBox
     Friend WithEvents Label21 As Label
     Friend WithEvents TextBox12 As TextBox
     Friend WithEvents Label20 As Label
-    Friend WithEvents Label25 As Label
-    Friend WithEvents OpenFileDialog1 As OpenFileDialog
-    Friend WithEvents PictureBox8 As PictureBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents CheckBox3 As CheckBox
+    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents DateTimePicker3 As DateTimePicker
+    Friend WithEvents TextBox18 As TextBox
+    Friend WithEvents Label28 As Label
+    Friend WithEvents Label27 As Label
+    Friend WithEvents CheckBox4 As CheckBox
+    Friend WithEvents TextBox16 As TextBox
+    Friend WithEvents Label26 As Label
+    Friend WithEvents TextBox15 As TextBox
+    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents DateTimePicker5 As DateTimePicker
+    Friend WithEvents Label11 As Label
+    Friend WithEvents CheckBox6 As CheckBox
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents DateTimePicker4 As DateTimePicker
+    Friend WithEvents Label23 As Label
+    Friend WithEvents CheckBox5 As CheckBox
 End Class
