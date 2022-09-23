@@ -78,7 +78,37 @@ Public Class Form2
             MsgBox(ex.Message)
         End Try
 
-        comando.CommandText = "INSERT INTO registro_usuario.persona (sabe_leer) VALUES ('" + CheckBox1.Checked + "')"
+        comando.CommandText =
+                        "INSERT INTO registro_usuario.persona 
+            (primer_nombre,
+            segundo_nombre,
+            apellido_paterno,
+            apellido_materno,
+            profesion,
+            estado_civil,
+            direccion_vivienda,
+            apellido_casada,
+            telefono,
+            fecha_nacimiento,
+            genero,
+            dpi,
+            sabe_leer,
+            sabe_escribir,
+            bautizado,
+            fecha_bautizo,
+            ministro_oficio_bautizo,
+            cargo_actual_iglesia,
+            fuera_pais,
+            fecha_migracion,
+            pais_migracion,
+            retirado,
+            fecha_retiro,
+            fallecido,
+            fecha_deceso,
+            conyuge,
+            nombre_conyuge)
+    VALUES ('" + TextBox1.Text +
+     "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox6.Text + "','" + TextBox15.Text + "','" + TextBox8.Text + "','" + TextBox5.Text + "','" + TextBox9.Text + "','" + DateTimePicker1.Value.ToShortDateString + "','" + TextBox16.Text + "'," + TextBox11.Text + ",'" + CheckBox3.Checked.ToString + "','" + CheckBox2.Checked.ToString + "','" + CheckBox1.Checked.ToString + "','" + DateTimePicker2.Value.ToShortDateString + "','" + TextBox12.Text + "','" + TextBox13.Text + "','" + CheckBox4.Checked.ToString + "','" + DateTimePicker3.Value.ToShortDateString + "','" + TextBox18.Text + "','" + CheckBox5.Checked.ToString + "','" + DateTimePicker4.Value.ToShortDateString + "'," + CheckBox6.Checked.ToString + ",'" + DateTimePicker5.Value.ToShortDateString + "','" + CheckBox7.Checked.ToString + "','" + TextBox7.Text + "')"
 
 
 
@@ -138,13 +168,8 @@ Public Class Form2
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
-        '(CheckBox3.Checked.ToString)
-        MsgBox(CheckBox3.CheckState)
-        MsgBox(CheckBox3.CheckAlign)
-        MsgBox(CheckBox3.Checked.GetTypeCode)
-        MsgBox(CheckBox3.Checked.GetType)
-        ' MsgBox(CheckBox3.CheckState.ToString)
-
+        MsgBox(CheckBox3.Checked.ToString)
+        MsgBox(DateTimePicker2.Value.ToShortDateString)
 
 
 

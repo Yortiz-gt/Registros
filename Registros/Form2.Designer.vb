@@ -313,6 +313,7 @@ Partial Class Form2
         Me.TextBox7.PlaceholderText = "María Ordoñez"
         Me.TextBox7.Size = New System.Drawing.Size(152, 23)
         Me.TextBox7.TabIndex = 44
+        Me.TextBox7.Text = "NULL"
         '
         'Label15
         '
@@ -444,6 +445,7 @@ Partial Class Form2
         Me.TextBox18.PlaceholderText = "Estados Unidos"
         Me.TextBox18.Size = New System.Drawing.Size(151, 23)
         Me.TextBox18.TabIndex = 62
+        Me.TextBox18.Text = "NULL"
         '
         'Label28
         '
@@ -481,6 +483,7 @@ Partial Class Form2
         Me.TextBox16.PlaceholderText = "Hombre"
         Me.TextBox16.Size = New System.Drawing.Size(119, 23)
         Me.TextBox16.TabIndex = 68
+        Me.TextBox16.Text = "NULL"
         '
         'Label26
         '
@@ -498,6 +501,7 @@ Partial Class Form2
         Me.TextBox15.PlaceholderText = "Soltero"
         Me.TextBox15.Size = New System.Drawing.Size(118, 23)
         Me.TextBox15.TabIndex = 66
+        Me.TextBox15.Text = "NULL"
         '
         'CheckBox3
         '
@@ -550,6 +554,7 @@ Partial Class Form2
         Me.TextBox11.PlaceholderText = "4465278900114"
         Me.TextBox11.Size = New System.Drawing.Size(266, 23)
         Me.TextBox11.TabIndex = 52
+        Me.TextBox11.Text = "NULL"
         '
         'Label19
         '
@@ -567,6 +572,7 @@ Partial Class Form2
         Me.TextBox9.PlaceholderText = "34568987"
         Me.TextBox9.Size = New System.Drawing.Size(119, 23)
         Me.TextBox9.TabIndex = 48
+        Me.TextBox9.Text = "NULL"
         '
         'Label17
         '
@@ -584,6 +590,7 @@ Partial Class Form2
         Me.TextBox8.PlaceholderText = "Lote 848, Amatitlán"
         Me.TextBox8.Size = New System.Drawing.Size(263, 23)
         Me.TextBox8.TabIndex = 46
+        Me.TextBox8.Text = "NULL"
         '
         'Label16
         '
@@ -610,6 +617,7 @@ Partial Class Form2
         Me.TextBox6.PlaceholderText = "Trabajador"
         Me.TextBox6.Size = New System.Drawing.Size(125, 23)
         Me.TextBox6.TabIndex = 39
+        Me.TextBox6.Text = "NULL"
         '
         'Label13
         '
@@ -626,6 +634,7 @@ Partial Class Form2
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(119, 23)
         Me.TextBox5.TabIndex = 37
+        Me.TextBox5.Text = "NULL"
         '
         'Label12
         '
@@ -659,6 +668,7 @@ Partial Class Form2
         Me.TextBox13.PlaceholderText = "Miembro"
         Me.TextBox13.Size = New System.Drawing.Size(151, 23)
         Me.TextBox13.TabIndex = 56
+        Me.TextBox13.Text = "NULL"
         '
         'Label21
         '
@@ -676,6 +686,7 @@ Partial Class Form2
         Me.TextBox12.PlaceholderText = "Hugo Hernandez"
         Me.TextBox12.Size = New System.Drawing.Size(151, 23)
         Me.TextBox12.TabIndex = 54
+        Me.TextBox12.Text = "NULL"
         '
         'Label20
         '
@@ -736,6 +747,7 @@ Partial Class Form2
         Me.TextBox4.PlaceholderText = "Pérez"
         Me.TextBox4.Size = New System.Drawing.Size(118, 23)
         Me.TextBox4.TabIndex = 27
+        Me.TextBox4.Text = "NULL"
         '
         'Label8
         '
@@ -753,6 +765,7 @@ Partial Class Form2
         Me.TextBox3.PlaceholderText = "Hernandez"
         Me.TextBox3.Size = New System.Drawing.Size(125, 23)
         Me.TextBox3.TabIndex = 25
+        Me.TextBox3.Text = "NULL"
         '
         'Label7
         '
@@ -770,6 +783,7 @@ Partial Class Form2
         Me.TextBox2.PlaceholderText = "Fernando"
         Me.TextBox2.Size = New System.Drawing.Size(116, 23)
         Me.TextBox2.TabIndex = 23
+        Me.TextBox2.Text = "NULL"
         '
         'Label6
         '
@@ -787,6 +801,7 @@ Partial Class Form2
         Me.TextBox1.PlaceholderText = "Carlos"
         Me.TextBox1.Size = New System.Drawing.Size(127, 23)
         Me.TextBox1.TabIndex = 21
+        Me.TextBox1.Text = "NULL"
         '
         'Label4
         '
